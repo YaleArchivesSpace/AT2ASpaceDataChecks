@@ -6,7 +6,9 @@ SELECT
     series.subdivisionIdentifier 'Series/Accession Number',
     series.title 'Series Title',
     rc.title 'Component Title',
-    rc.dateExpression 'Component Date'
+    rc.dateExpression 'Component Date',
+    rc.extentNumber 'Number',
+    rc.extentType 'Extent Type'
 FROM
     ResourcesComponents rc 
         INNER JOIN
